@@ -8,10 +8,11 @@ xMax = 2
 yMin = -2
 yMax = 2
 
+# Edit this funtion to return the scalar field of your choice!
 def functionToPlot(x,y):
-#  return math.exp( -(x**2 + y**2) ) # Gaussian
-#  return x**2 - y**3 # x squared minus y cubed
-  return x**2 + y**2 # r squared, harmonic oscillator potential
+  return math.exp( -(x**2 + y**2) ) # Gaussian
+  #return x**2 - y**3 # x squared minus y cubed
+  #return x**2 + y**2 # r squared, harmonic oscillator potential
 
   
 # Gridpoint spacing, smaller spacing = longer to run but finer detail. 100 should be fine.
