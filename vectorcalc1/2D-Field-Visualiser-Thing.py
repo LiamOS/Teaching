@@ -10,14 +10,13 @@ yMax = 2
 
 def functionToPlot(x,y):
 #  return math.exp( -(x**2 + y**2) ) # Gaussian
-  return 
+#  return x**2 - y**3 # x squared minus y cubed
+  return x**2 + y**2 # r squared, harmonic oscillator potential
 
   
-# Gridpoint spacing.
+# Gridpoint spacing, smaller spacing = longer to run but finer detail. 100 should be fine.
 dx = (xMax - xMin)/100.
 dy = (yMax - yMin)/100.
-
-
 
 # The rest is magic mostly.
 x   = math.arange(yMin,xMax+dx,dx)
@@ -36,7 +35,6 @@ plt.ylabel("y")
 plt.colorbar()
 plt.show()
 #plt.savefig("Scalar.png",format="PNG") # Uncomment to save a picture.
-
 
 # Now for the vector field thing
 grad_x = math.array([ [ dat[i][j]*x[i] for i in range(len(x)) ] for j in range(len(y)) ])
