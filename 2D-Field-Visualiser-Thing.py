@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 from matplotlib import cm
-import numpy as math
+import numpy as math # Don't judge me.
 
 # Here are the limits for plotting:
 xMin = -2
